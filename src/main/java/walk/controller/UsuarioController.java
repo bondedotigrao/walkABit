@@ -1,6 +1,8 @@
 package walk.controller;
 
+import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import walk.model.entidades.Usuario;
 import walk.model.negocio.UsuarioNegocio;
@@ -9,6 +11,8 @@ import walk.model.negocio.UsuarioNegocio;
  *
  * @author Jarvis
  */
+@ManagedBean
+@RequestScoped
 public class UsuarioController {
     private final UsuarioNegocio usuarioNegocio;
     private Usuario cadUsuario;
