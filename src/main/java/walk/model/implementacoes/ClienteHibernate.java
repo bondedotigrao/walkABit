@@ -46,7 +46,7 @@ public class ClienteHibernate implements ClienteDAO {
         }
 
     }
-
+//
     @Override
     public Cliente recuperar(int codigo) {
         Session session = this.sessions.openSession();
